@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  database:
+    container_name: postgres-csc2022
+    image: postgres:latest
+    ports:
+      - "5433:5432"
+    volumes:
+      - C:\Users\babaj\CSC202-2022SET:/data/postgres
+    env_file:
+      - csc2022.env
